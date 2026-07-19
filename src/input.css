@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    
+    .floating-card {
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    }
+    
+    .text-gradient {
+        background: linear-gradient(135deg, #9f4200, #ed6e1f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Submenu animation styles */
+    .services-dropdown:hover .services-menu,
+    .services-dropdown:focus-within .services-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
